@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'Playcheerful';
+    /* Nombre que darás a tu fuente */
+    src: url('/fonts/PlayCheerful.ttf') format('truetype');
+    /* Ruta relativa a tu archivo de fuente */
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    /* Nombre que darás a tu fuente */
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    /* Ruta relativa a tu archivo de fuente */
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    /* Nombre que darás a tu fuente */
+    src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    /* Ruta relativa a tu archivo de fuente */
+}
+
+body {
+    font-family: OpenSans;
+    margin: 0;
+    padding: 0;
+    background-color: white
+}
+
+h2 {
+    font-family: OpenSans-ExtraBold;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-family: OpenSans;
+    font-size: 12px;
+    color: rgb(79, 77, 77);
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.header-bar {
+    font-family: OpenSans;
+    background-color: #2dad4f;
+    /* Color de fondo de la barra de encabezado */
+    color: white;
+    /* Color del texto en la barra de encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons a,
+.auth-buttons button {
+    margin-left: 10px;
+    color: white;
+    /* Color del texto en los botones */
+    background-color: #007bff;
+    /* Color de fondo de los botones */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Elimina el subrayado de los hipervínculos */
+    cursor: pointer;
+}
+
+.auth-buttons button:hover,
+.auth-buttons a:hover {
+    background-color: #0056b3;
+    /* Color de fondo de los botones al pasar el ratón */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #7df088;
+    /* Color de fondo del menú de navegación */
+    border-bottom: 1px solid #ccc;
+    /* Línea inferior del menú de navegación */
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* Elimina el subrayado de los hipervínculos */
+    color: #333;
+    /* Color del texto en los enlaces del menú de navegación */
+}
+
+nav li a:hover {
+    background-color: #8df2ad;
+    /* Color de fondo de los enlaces del menú de navegación al pasar el ratón */
+}
+
+footer {
+    background-color: #2dad4f;
+    /* Color de fondo del pie de página */
+    color: #f8dd54;
+    /* Color del texto en el pie de página */
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#footerIndex {
+    position: relative;
+}
+
+.logo {
+    margin: 0;
+    font-family: PlayCheerful;
+    /* Utiliza la misma fuente que la página */
+    font-size: 46px;
+    /* Tamaño de la fuente */
+    /*color: #e5f31b;*/
+    color: #f8dd54;
+}
+
+#botonSignIn {
+    background-color: transparent;
+}
+
+#botonSignIn:hover {
+    color: #f8dd54;
+}
+
+p {
+    font-family: OpenSans;
+    font-size: 20px;
+    text-align: center;
+}
+
+.botonEstilo {
+    font-family: OpenSans;
+    font-size: 20px;
+    color: #fcf8c4;
+    background-color: #62cc48;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.botonEstilo:hover {
+    background-color: #68d054;
+    /* Cambia el color de fondo al pasar el ratón */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra al botón al pasar el ratón */
+}
+
+.botonEstilo:active {
+    transform: translateY(1px);
+    /* Mueve el botón hacia abajo 1px cuando está clickeado */
+    box-shadow: none;
+    /* Elimina la sombra */
+}
+
+.botonEstilo[disabled] {
+    pointer-events: none;
+    /* Evita eventos del mouse */
+    cursor: default;
+    /* Cambia el cursor */
+    opacity: 0.5;
+    /* Reduce la opacidad */
+    filter: grayscale(100%);
+    /* Convierte a escala de grises */
+    /* Agrega otras propiedades según sea necesario para anular animaciones */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-family: OpenSans;
+    font-size: 20px;
+    color: #fcf8c4;
+    background-color: #559c43;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    max-width: 200px;
+    /* Ajusta el valor según sea necesario */
+    margin: 0 auto;
+}
+
+.custom-file-upload:hover {
+    background-color: #4fa83d;
+    /* Cambia el color de fondo al pasar el ratón */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra al botón al pasar el ratón */
+}
+
+#fileName {
+    font-family: OpenSans;
+    font-size: 12px;
+}
+
+.signin-form {
+    font-family: OpenSans;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.signup-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    /* Cambia el color del borde cuando el input está enfocado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Agrega una sombra al input cuando está enfocado */
+}
+
+.botonesAutenticacion {
+    font-family: OpenSans;
+    margin-left: 10px;
+    color: white;
+    /* Color del texto en los botones */
+    background-color: #007bff;
+    /* Color de fondo de los botones */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Elimina el subrayado de los hipervínculos */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.botonesAutenticacion:hover {
+    background-color: #0056b3;
+    /* Color de fondo de los botones al pasar el ratón */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.carousel {
+    width: 65vw;
+    height: 65vh;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+.separador {
+    border-top: 1px solid #ccc;
+    /* Línea delgada de color gris claro */
+    margin-top: 20px;
+    /* Espacio superior para separar las secciones */
+    margin-bottom: 20px;
+    /* Espacio inferior para separar las secciones */
+}
+
+#botonReto {
+    background-color: #f8dd54;
+    color: #70a7d8;
+
+}
+
+#botonReto:hover {
+    background-color: #f8dd54;
+    color: #70a7d8;
+}
+
+#botonReto[disabled] {
+    pointer-events: none;
+    /* Evita eventos del mouse */
+    cursor: default;
+    /* Cambia el cursor */
+    opacity: 0.5;
+    /* Reduce la opacidad */
+    filter: grayscale(100%);
+    /* Convierte a escala de grises */
+    /* Agrega otras propiedades según sea necesario para anular animaciones */
+}
+
+table {
+    max-width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #6bc3f9;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(204, 235, 255);
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el contenedor del icono de eliminar */
+#iconoEliminar {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    color: red;
+    width: 1px;
+    height: 1px;
+}
+
+.botonBorrarFila {
+    background: none;
+    color: red;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+}

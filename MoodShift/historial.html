@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodShift - Historial</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="header-bar">
+                <h1 class="logo">MoodShift</h1>
+                <div class="auth-buttons">
+                    <button id="botonSignIn">Sign in</button>
+                    <button id="botonSignUp">Sign up</button>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="analizar.html">Analizar estado de ánimo</a></li>
+                <li><a href="#">Historial</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="separador"></div>
+            <section>
+                <h2>Historial de cambios</h2>
+                <h3>Tu historial de cambios de ánimo en MoodShift.</h3>
+                <table id="tablaHistorial">
+                    <thead>
+                        <tr>
+                            <th>Estado inicial</th>
+                            <th>Estado final</th>
+                            <th>Fecha del cambio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de historial se agregarán aquí mediante JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+    </main>
+    <footer id="footerIndex">
+        <p>&copy; 2024 MoodShift</p>
+    </footer>
+    <script src="/js/signIn.js"></script>
+    <script src="/js/signUp.js"></script>
+    <script src="/js/scriptHistorial.js"></script>
+</body>
+</html>

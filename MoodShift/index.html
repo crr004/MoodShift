@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodShift</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <h1 class="logo">MoodShift</h1>
+            <div class="auth-buttons">
+                <button id="botonSignIn">Sign in</button>
+                <button id="botonSignUp">Sign up</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="analizar.html">Analizar estado de ánimo</a></li>
+            <li><a href="historial.html">Historial</a></li>
+            <li><a href="estadisticas.html">Estadísticas</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>¡Cambia tu estado de ánimo con un solo clic!</h2>
+        <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="img/img1.jpg" alt="Image1">
+                    </li>
+                    <li class="slide">
+                        <img src="img/img2.jpg" alt="Image2">
+                    </li>
+                    <li class="slide">
+                        <img src="img/img3.jpg" alt="Image3">
+                    </li>
+                    <li class="slide">
+                        <img src="img/img4.jpg" alt="Image4">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Debes <a href="analizar.html">analizar tu estado de ánimo</a> antes de cambiarlo</h3>
+            <p></p>
+            <button class="botonEstilo" id="botonCE" disabled>Cambiar estado de ánimo</button>
+            <p id="parrafoEA">Estado de ánimo actual: <span>No analizado</span></p>
+        </section>
+        <div class="separador"></div>
+        <section>
+            <h2>¡Realiza el reto diario!</h2>
+            <h3 id="headerReto"></h3>
+            <p id="parrafoReto"></p>
+            <button class="botonEstilo" id="botonReto">Reto completado</button>
+            <p id="parrafoRetoCompletado"></p>
+        </section>
+    </main>
+    <footer id="footerIndex">
+        <p>&copy; 2024 MoodShift</p>
+    </footer>
+    <audio id="sonidoRetoCompletado">
+        <source src="res/retoCompletado.wav" type="audio/wav">
+    </audio>
+    <script src="js/scriptIndex.js"></script>
+    <script src="/js/signIn.js"></script>
+    <script src="/js/signUp.js"></script>
+</body>
+
+</html>
